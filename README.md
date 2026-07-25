@@ -100,7 +100,7 @@ cd ~/SillyTavern/plugins && git clone https://github.com/JY-s17/TavernBackupAssi
 
 ```bash
 cd plugins
-https://github.com/JY-s17/TavernBackupAssistant.git
+git clone https://github.com/JY-s17/TavernBackupAssistant.git
 cd TavernBackupAssistant
 npm install
 ```
