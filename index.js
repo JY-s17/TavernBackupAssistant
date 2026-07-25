@@ -147,8 +147,13 @@ function init(app, config) {
         // Add files to archive / 添加文件到压缩包
         if (data) archive.directory(P.data, 'data');
         if (extensions) {
-            archive.directory(P.extGlobal, 'public/scripts/extensions');
-            // If data is not selected, manually grab user extensions / 若未选Data，手动抓取用户插件
+            // 1. 只抓取全局插件下的 third-party 文件夹，并放进 ZIP 对应的 third-party 路径
+            const thirdPartyPath = path.join(P.extGlobal, 'third-party');
+            if (fs.existsSync(thirdPartyPath)) {
+                archive.directory(thirdPartyPath, 'public/scripts/extensions/third-party');
+            }
+
+            // 2. 这里的用户个人插件保持原样，千万不要改它的 ZIP 路径！
             if (!data && fs.existsSync(P.extUser)) archive.directory(P.extUser, 'data/default-user/extensions');
         }
         if (themes) {
