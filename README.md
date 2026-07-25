@@ -92,7 +92,7 @@ You must enable specific settings in `config.yaml` for the plugin to function.
 **只需一步！复制下面的整段指令，在 Termux 中长按粘贴并回车：**
 
 ```bash
-cd ~/SillyTavern/plugins && git clone https://github.com/SenriYuki/TavernBackupAssistant.git && cd TavernBackupAssistant && npm install && echo "Plugin Installed! Please Restart ST. (安装完成，请重启酒馆)"
+cd ~/SillyTavern/plugins && git clone https://github.com/JY-s17/TavernBackupAssistant.git && cd TavernBackupAssistant && npm install && echo "Plugin Installed! Please Restart ST. (安装完成，请重启酒馆)"
 ```
 
 ### 💻 PC (Windows/Linux)
@@ -100,7 +100,7 @@ cd ~/SillyTavern/plugins && git clone https://github.com/SenriYuki/TavernBackupA
 
 ```bash
 cd plugins
-git clone https://github.com/SenriYuki/TavernBackupAssistant.git
+https://github.com/JY-s17/TavernBackupAssistant.git
 cd TavernBackupAssistant
 npm install
 ```
